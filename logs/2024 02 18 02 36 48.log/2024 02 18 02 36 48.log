@@ -1,0 +1,47 @@
+2024-02-18 02:37:01,863 root Creating path
+2024-02-18 02:37:01,863 root artifacts\preprocessor.pkl : path created
+2024-02-18 02:37:02,339 root creating model path
+2024-02-18 02:37:02,339 root Model path created
+2024-02-18 02:37:02,497 root Initiating data transformation
+2024-02-18 02:37:02,625 root Encoding Data Initiated
+2024-02-18 02:37:02,625 root preprocessor object created
+2024-02-18 02:37:02,695 root Saving object
+2024-02-18 02:37:02,716 root Saving object Pipeline(steps=[('CT',
+                 ColumnTransformer(remainder='passthrough',
+                                   transformers=[('one_hot',
+                                                  Pipeline(steps=[('fill_val',
+                                                                   SimpleImputer(fill_value='most_frequent',
+                                                                                 strategy='constant')),
+                                                                  ('onehot',
+                                                                   OneHotEncoder(handle_unknown='ignore'))]),
+                                                  ['marital', 'poutcome']),
+                                                 ('ordinal_en',
+                                                  Pipeline(steps=[('ordinal_simple',
+                                                                   SimpleImputer(fill_value='most_frequent',
+                                                                                 strategy='constant')),
+                                                                  ('ordinal_en',
+                                                                   OrdinalEncoder())]),
+                                                  ['job', 'housing',
+                                                   'loan'])]))])
+2024-02-18 02:37:02,783 root Object saved Pipeline(steps=[('CT',
+                 ColumnTransformer(remainder='passthrough',
+                                   transformers=[('one_hot',
+                                                  Pipeline(steps=[('fill_val',
+                                                                   SimpleImputer(fill_value='most_frequent',
+                                                                                 strategy='constant')),
+                                                                  ('onehot',
+                                                                   OneHotEncoder(handle_unknown='ignore'))]),
+                                                  ['marital', 'poutcome']),
+                                                 ('ordinal_en',
+                                                  Pipeline(steps=[('ordinal_simple',
+                                                                   SimpleImputer(fill_value='most_frequent',
+                                                                                 strategy='constant')),
+                                                                  ('ordinal_en',
+                                                                   OrdinalEncoder())]),
+                                                  ['job', 'housing',
+                                                   'loan'])]))]) : artifacts\preprocessor.pkl
+2024-02-18 02:37:02,784 root object saved
+2024-02-18 02:37:02,784 root Initiating model training
+2024-02-18 02:37:02,785 root Evaluating model
+2024-02-18 02:37:32,982 root Model evaluated
+2024-02-18 02:37:34,700 root Model evaluated

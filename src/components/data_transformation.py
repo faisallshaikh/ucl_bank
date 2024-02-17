@@ -47,6 +47,7 @@ class DataTransformation:
                 ("ordinal_en", OrdinalEncoder())
             ])
 
+
             CT = ColumnTransformer(transformers=[
                 ("one_hot", onehot_imp,onehot_col),
                 ("ordinal_en", ordinal_imp, ordinal_col)

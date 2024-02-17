@@ -18,7 +18,7 @@ class DataIngestion:
             self.data_configuratoin = DataConfiguration()
 
         def initiate_data_ingestion(self):
-            df = pd.read_csv(r"D:\Faisal\Projects\ucl_bank\dataset\final_file_1.csv")     
+            df = pd.read_csv(r"D:\Faisal\Projects\ucl_bank\dataset\final_file_2.csv")     
 
             os.makedirs(os.path.dirname(self.data_configuratoin.raw_data_path), exist_ok=True)
 

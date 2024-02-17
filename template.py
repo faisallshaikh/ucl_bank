@@ -17,7 +17,8 @@ list_of_files = [
     "\\src\\components\\data_ingestion.py",
     "\\src\\components\\data_transformation.py",
     "\\main.py",
-    "\\src\\utils.py"
+    "\\src\\utils.py",
+    "\\src\\components\\model_trainer.py"
 ]
 
 
