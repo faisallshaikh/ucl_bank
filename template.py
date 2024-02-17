@@ -16,7 +16,8 @@ list_of_files = [
     "\\src\\notebook\\FE.ipynb",
     "\\src\\components\\data_ingestion.py",
     "\\src\\components\\data_transformation.py",
-    "\\main.py"
+    "\\main.py",
+    "\\src\\utils.py"
 ]
 
 
