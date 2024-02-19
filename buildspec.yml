@@ -14,13 +14,16 @@ phases:
       - echo "Installation process completed"
 
   pre_build:
-    - echo "Prebuild Phase"
-    - echo "Prebuild completed"
+    commands:
+      - echo "Prebuild Phase"
+      - echo "Prebuild completed"
 
   build:
-    - echo "building phase"
-    - echo "building phase complete"
+    commands:
+      - echo "building phase"
+      - echo "building phase complete"
 
   post_build:
-    - echo "Postbuild Phase"
-    - echo "PostBuild completed"
+    commands:
+      - echo "Postbuild Phase"
+      - echo "PostBuild completed"
