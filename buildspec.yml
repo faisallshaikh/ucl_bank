@@ -9,18 +9,18 @@ phases:
     runtime-versions:
       nodejs: 12
       commands:
-        - echo "running on region $MY_AWS_REGION"
-        - echo "Print environment variables"
-        - echo "Installation process completed"
+          - echo "running on region $MY_AWS_REGION"
+          - echo "Print environment variables"
+          - echo "Installation process completed"
   pre_build:
     commands:
-      - echo "Prebuild Phase"
-      - echo "Prebuild completed"
+        - echo "Prebuild Phase"
+        - echo "Prebuild completed"
   build:
     commands:
-      - echo "building phase"
-      - echo "building phase complete"
+        - echo "building phase"
+        - echo "building phase complete"
   post_build:
     commands:
-      - echo "Postbuild Phase"
-      - echo "PostBuild completed"
+        - echo "Postbuild Phase"
+        - echo "PostBuild completed"
