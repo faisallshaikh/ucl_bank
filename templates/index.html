@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <h1>Predict Term deposit</h1><br>
+        <form method="post" action='/predict_val_page'>
+            <label> Age </label><br>
+            <input type="number" name="age" placeholder="age"><br><br>
+
+            <label> Job </label><br>
+            <input type="text" name="job" placeholder="job"><br><br>
+
+            <label> marital </label><br>
+            <input type="text" name="marital" placeholder="marital"><br><br>
+
+            <label> balance </label><br>
+            <input type="number" name="balance" placeholder="balance"><br><br>
+
+            <label> housing </label><br>
+            <input type="text" name="housing" placeholder="housing"><br><br>
+
+            <label> loan </label><br>
+            <input type="text" name="loan" placeholder="loan"><br><br>
+
+            <label> day </label><br>
+            <input type="number" name="day" placeholder="day"><br><br>
+
+            <label> duration </label><br>
+            <input type="number" name="duration" placeholder="duration"><br><br>
+
+            <label> campaign </label><br>
+            <input type="number" name="campaign" placeholder="campaign"><br><br>
+
+            <label> pdays </label><br>
+            <input type="number" name="pdays" placeholder="pdays"><br><br>
+
+            <label> previous </label><br>
+            <input type="number" name="previous" placeholder="previous"><br><br>
+
+            <label> poutcome </label><br>
+            <input type="text" name="poutcome" placeholder="poutcome"><br><br>
+
+            <input type="submit" value="Predict">
+
+        </form>
+        <h2>Result : {{result}}</h2>
+    </body>
+</html>
+

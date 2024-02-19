@@ -1,0 +1,15 @@
+2024-02-18 11:19:55,621 werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+2024-02-18 11:19:55,621 werkzeug [33mPress CTRL+C to quit[0m
+2024-02-18 11:21:34,510 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:34] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:35,920 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:35] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:36,498 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:36] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:36,647 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:36] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:36,793 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:36] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:36,939 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:36] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:37,101 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:37] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:37,240 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:37] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:37,379 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:37] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2024-02-18 11:21:37,597 werkzeug 127.0.0.1 - - [18/Feb/2024 11:21:37] "[31m[1mGET /predict HTTP/1.1[0m" 405 -

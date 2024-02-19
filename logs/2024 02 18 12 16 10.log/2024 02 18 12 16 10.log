@@ -1,0 +1,6 @@
+2024-02-18 12:16:11,653 werkzeug  * Debugger is active!
+2024-02-18 12:16:11,704 werkzeug  * Debugger PIN: 258-708-953
+2024-02-18 12:16:18,164 werkzeug 127.0.0.1 - - [18/Feb/2024 12:16:18] "GET / HTTP/1.1" 200 -
+2024-02-18 12:16:18,336 werkzeug 127.0.0.1 - - [18/Feb/2024 12:16:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-02-18 12:16:26,681 werkzeug 127.0.0.1 - - [18/Feb/2024 12:16:26] "GET /predict_val_page HTTP/1.1" 200 -
+2024-02-18 12:16:50,734 werkzeug  * Detected change in 'd:\\faisal\\projects\\ucl_bank\\main.py', reloading

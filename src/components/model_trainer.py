@@ -5,7 +5,7 @@ from src.exception_file import CustomException
 from src.logger import logging
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression 
-from src.utils import evaluate_model
+from src.utils import evaluate_model, save_object
 
 @dataclass 
 class ModelTrainingConfig:
@@ -44,7 +44,21 @@ class ModelTraining:
 
             evaluation_report = evaluate_model(X_train, X_test , y_train, y_test, models, params)
 
-            print(evaluation_report)
+            best_model_name = ''
+            for key in evaluation_report:
+                if evaluation_report[key] == max(evaluation_report.values()):
+                    best_model_name += key
+
+            best_model = models[best_model_name]
+
+            logging.info("Saving object")
+
+            save_object(
+                best_model,
+                self.model_training_config.model_path
+            )
+
+            logging.info("Object saved")
 
         except Exception as e:
             raise CustomException(e,sys)

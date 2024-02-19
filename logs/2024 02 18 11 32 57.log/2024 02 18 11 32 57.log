@@ -1,0 +1,6 @@
+2024-02-18 11:32:58,761 werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-18 11:32:58,761 werkzeug [33mPress CTRL+C to quit[0m
+2024-02-18 11:33:10,570 werkzeug 127.0.0.1 - - [18/Feb/2024 11:33:10] "GET / HTTP/1.1" 200 -
+2024-02-18 11:33:15,257 werkzeug 127.0.0.1 - - [18/Feb/2024 11:33:15] "[33mGET /title HTTP/1.1[0m" 404 -
+2024-02-18 11:33:19,351 werkzeug 127.0.0.1 - - [18/Feb/2024 11:33:19] "[31m[1mGET /predict HTTP/1.1[0m" 405 -

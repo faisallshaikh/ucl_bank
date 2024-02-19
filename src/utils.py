@@ -45,3 +45,13 @@ def evaluate_model(X_train , X_test , y_train , y_test, models, params):
         logging.info("Model evaluation incomplete")
         raise CustomException(e,sys)
 
+
+def load_object(path):
+    """object path"""
+    try:
+
+        with open(path, 'rb') as f:
+            return pickle.load(f) 
+
+    except Exception as e:
+        raise CustomException(e,sys)

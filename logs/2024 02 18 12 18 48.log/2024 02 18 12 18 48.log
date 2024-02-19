@@ -1,0 +1,4 @@
+2024-02-18 12:18:49,114 werkzeug  * Debugger is active!
+2024-02-18 12:18:49,116 werkzeug  * Debugger PIN: 258-708-953
+2024-02-18 12:18:52,290 werkzeug 127.0.0.1 - - [18/Feb/2024 12:18:52] "[31m[1mGET /predict_val_page HTTP/1.1[0m" 405 -
+2024-02-18 12:19:05,376 werkzeug  * Detected change in 'd:\\Faisal\\Projects\\ucl_bank\\web_app.py', reloading
