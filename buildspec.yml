@@ -1,26 +1,31 @@
 version: 0.2
 
 env:
-  variables:
-    MY_AWS_REGION: "ap-south-1"
+    variables:
+        MY_AWS_REGION: "ap-south-1"
 
-phases:
-  install:
-    runtime-versions:
-      nodejs: 12
-      commands:
-          - echo "running on region $MY_AWS_REGION"
-          - echo "Print environment variables"
-          - echo "Installation process completed"
-  pre_build:
-    commands:
-        - echo "Prebuild Phase"
-        - echo "Prebuild completed"
-  build:
-    commands:
-        - echo "building phase"
-        - echo "building phase complete"
-  post_build:
-    commands:
-        - echo "Postbuild Phase"
-        - echo "PostBuild completed"
+
+phases: 
+    install:
+        runtime-versions:
+            nodejs: 12
+        commands:
+            - echo "Running on $MY_AWS_REGION"
+            - echo "Print Environment Variables"
+            - echo "Start the installation process"
+            - echo "Installation Process Completed"
+    pre_build:
+        commands: 
+            - echo "This is the start of Pre-Build phase"
+            - echo "Pre-Build phase is now completed"
+    build:
+        commands:
+            - echo "we are currently on build phase"
+            - echo "Build Activity is completed"
+            - echo "Run Basic check whether Website is ready for use"
+            - echo "Test was successful"
+            - echo "proceed with next steps"
+    post_build:
+        commands:
+            - echo "We are currently on post_build phase"
+            - echo "post_build phase activity is completed. Moving to Artifacts Phase"
