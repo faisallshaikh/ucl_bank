@@ -1,6 +1,5 @@
 version: 0.2
 
-
 env:
   variables:
     MY_AWS_REGION: "ap-south-1"
