@@ -9,7 +9,6 @@ phases:
   install:
     run-as: ubuntu-latest
     commands:
-      - echo "running on region $MY_AWS_REGION"
       - echo "Print environment variables"
       - echo "Installation process completed"
 
