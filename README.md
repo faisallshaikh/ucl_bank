@@ -35,5 +35,10 @@ Input variables:
 #### Output variable (desired target):
 17. - y - has the client subscribed a term deposit? (binary: "yes","no")
 
-
+## Here will be using AWS Services to deploy our Web-Application into production server
+### Services Used 
+1. CodeCommit 
+2. CodeBuild 
+3. CodeDeploy 
+4. CodePipeline 
 
