@@ -3,7 +3,7 @@ import sys
 from dataclasses import dataclass 
 from src.exception_file import CustomException 
 from src.logger import logging
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression 
 from src.utils import evaluate_model, save_object
 
@@ -31,16 +31,18 @@ class ModelTraining:
 
             models = {
                 "RandomForestClassifier" : RandomForestClassifier(),
-                "LogisticRegression" : LogisticRegression()
+                # "LogisticRegression" : LogisticRegression()
             }
 
             params = {
                 "RandomForestClassifier" : {"n_estimators" : [100,135,175],
                                             "max_features" : ["sqrt", "log2", None]},
                                         
-                "LogisticRegression" : {"penalty" : ["l2", "elasticnet"],
-                                        "solver" : ["saga"]}
-            }
+                # "LogisticRegression" : {"penalty" : ["l2", "elasticnet"],
+                #                         "solver" : ["saga"]}
+
+                "GradientBoostingClassifier" : {}
+            } 
 
             evaluation_report = evaluate_model(X_train, X_test , y_train, y_test, models, params)
 
@@ -59,6 +61,8 @@ class ModelTraining:
             )
 
             logging.info("Object saved")
+
+            print(evaluation_report)
 
         except Exception as e:
             raise CustomException(e,sys)

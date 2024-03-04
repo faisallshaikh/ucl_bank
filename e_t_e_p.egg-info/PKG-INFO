@@ -9,3 +9,5 @@ Requires-Dist: scikit-learn
 Requires-Dist: matplotlib
 Requires-Dist: pyarrow
 Requires-Dist: flask
+Requires-Dist: mlflow
+Requires-Dist: dvc
