@@ -12,7 +12,7 @@ This dataset has the data ordered by date (from May 2008 to November 2010)
 dataset info - dataset has 41188 entries and 20 columns 
 
 Input variables:
-#### bank client data:
+#### Bank client data:
 1. - Age : Age
 2. - job : Type of Job 
 3. - marital : marital status
@@ -21,18 +21,18 @@ Input variables:
 6. - balance: average yearly balance, in euros  
 7. - housing: has housing loan? 
 8. - loan: has personal loan? 
-#### related with the last contact of the current campaign:
+#### Related with the last contact of the current campaign:
 9. - contact: contact communication type 
 10. - day: last contact day of the month 
 11. - month: last contact month of year 
 12. - duration: last contact duration, in seconds 
-#### other attributes:
+#### Other attributes:
 13. - campaign: number of contacts performed during this campaign and for this client 
 14. - pdays: number of days that passed by after the client was last contacted from a previous campaign 
 15. - previous: number of contacts performed before this campaign and for this client
 16. - poutcome: outcome of the previous marketing campaign 
 
-Output variable (desired target):
+#### Output variable (desired target):
 17. - y - has the client subscribed a term deposit? (binary: "yes","no")
 
 
