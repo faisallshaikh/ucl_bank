@@ -51,7 +51,7 @@ Input variables:
 ## Workflow 
 In summary, the solution has the following workflow:
 
-1. A change or commit to the code in the CodeCommit application repository triggers CodePipeline with the help of a CloudWatch event.
+1. A change or commit to the code in the CodeCommit application repository triggers CodePipeline with the help of a EventBridge event.
 2. The pipeline downloads the code from the CodeCommit repository, initiates the Build and Test action using CodeBuild, and securely saves the built artifact on the S3 bucket.
 3. This solution uses CodeBuild to build and test the code. CodeBuild in AWS is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready for deployment. A `buildspec` is a collection of `build commands` and related settings, in `YAML format`, that CodeBuild uses to run a build
 
