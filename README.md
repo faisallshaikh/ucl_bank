@@ -40,8 +40,37 @@ Input variables:
 
 ![alt text](<src/AWS Deploy cycle.png>)
 
-1. CodeCommit 
-2. CodeBuild 
-3. CodeDeploy 
-4. CodePipeline 
+1. Amazon CodeCommit 
+2. Amazon CodeBuild 
+3. Amazon CodeDeploy 
+4. Amazon CodePipeline 
+5. Amazon (Simple Storage Service) S3 Bucket
+6. Amazon CloudWatch Events now called EventBridge
+7. AWS Key Management Service (AWS KMS)
 
+## Workflow 
+In summary, the solution has the following workflow:
+
+1. A change or commit to the code in the CodeCommit application repository triggers CodePipeline with the help of a CloudWatch event.
+2. The pipeline downloads the code from the CodeCommit repository, initiates the Build and Test action using CodeBuild, and securely saves the built artifact on the S3 bucket.
+3. This solution uses CodeBuild to build and test the code. CodeBuild in AWS is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready for deployment. A `buildspec` is a collection of `build commands` and related settings, in `YAML format`, that CodeBuild uses to run a build
+
+4. CodeDeploy 
+1. Create EC2 with IAM roles attached (S3) with tags assigned 
+1) Create application on code deploy 
+2) push code revision to s3 bucket 
+3) create deployment group and validate code deploy agent installed with SSM 
+4) deploy the application to EC2 instances 
+
+* We have to give the access of the S3READONLY to the IAM user , so that it can read from the s3 and we will be creating multiple instances , and by connecting to every instances CLI we will be running some commands to install and check whether it is working , by doing this or by running the commands we will be running the code deploy agents 
+Now this code deploy agent will be having direct connection to the s3 bucket 
+Code deploy agent will be installed in each of the EC2 instances 
+
+We will be creating `s3 bucket` with versioning enabled 
+
+Now to say that for which set of instances we will be deploying the code , for that we will be configuring the deployment group and them we will be pushing the code version to the deployment group 
+
+code deploy agent will be communicating with the code deploy services, code deploy agent updates the code deploy service the status of the code and ec2 instance
+
+Whenever any new request comes to the code deploy service , this request will be passed to the code deploy agent\
+Now let us assume we have pushed new version code to the repository (it could be an s3 bucket) then this code deploy service is going to initiate the request . Once the request is issued the code deploy agent within every ec2 instance will pick the latest version code from the s3 bucket. And then we will be performing the deployment on each of the instances 
