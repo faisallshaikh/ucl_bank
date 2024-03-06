@@ -38,7 +38,7 @@ Input variables:
 ## Here will be using AWS Services to deploy our Web-Application into production server
 ### Services Used 
 
-![alt text](<dataset/AWS Deploy cycle.png>)
+![alt text](<src/AWS Deploy cycle.png>)
 
 1. CodeCommit 
 2. CodeBuild 
