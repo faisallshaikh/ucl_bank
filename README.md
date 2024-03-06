@@ -56,11 +56,12 @@ In summary, the solution has the following workflow:
 3. This solution uses CodeBuild to build and test the code. CodeBuild in AWS is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready for deployment. A `buildspec` is a collection of `build commands` and related settings, in `YAML format`, that CodeBuild uses to run a build
 
 4. CodeDeploy 
+
 1. Create EC2 with IAM roles attached (S3) with tags assigned 
-1) Create application on code deploy 
-2) push code revision to s3 bucket 
-3) create deployment group and validate code deploy agent installed with SSM 
-4) deploy the application to EC2 instances 
+2) Create application on code deploy 
+3) push code revision to s3 bucket 
+4) create deployment group and validate code deploy agent installed with SSM 
+5) deploy the application to EC2 instances 
 
 * We have to give the access of the S3READONLY to the IAM user , so that it can read from the s3 and we will be creating multiple instances , and by connecting to every instances CLI we will be running some commands to install and check whether it is working , by doing this or by running the commands we will be running the code deploy agents 
 Now this code deploy agent will be having direct connection to the s3 bucket 
