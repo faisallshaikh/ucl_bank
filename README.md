@@ -57,17 +57,17 @@ In summary, the solution has the following workflow:
 
 4. CodeDeploy 
 
-1. Create EC2 with IAM roles attached (S3) with tags assigned 
-2) Create application on code deploy 
-3) push code revision to s3 bucket 
-4) create deployment group and validate code deploy agent installed with SSM 
-5) deploy the application to EC2 instances 
+* Create EC2 with IAM roles attached (S3) with tags assigned 
+* Create application on code deploy 
+* push code revision to s3 bucket 
+* create deployment group and validate code deploy agent installed with SSM 
+* deploy the application to EC2 instances 
 
 * We have to give the access of the S3READONLY to the IAM user , so that it can read from the s3 and we will be creating multiple instances , and by connecting to every instances CLI we will be running some commands to install and check whether it is working , by doing this or by running the commands we will be running the code deploy agents 
 Now this code deploy agent will be having direct connection to the s3 bucket 
 Code deploy agent will be installed in each of the EC2 instances 
 
-We will be creating `s3 bucket` with versioning enabled 
+We will be creating `s3 bucket` with `versioning enabled` 
 
 Now to say that for which set of instances we will be deploying the code , for that we will be configuring the deployment group and them we will be pushing the code version to the deployment group 
 
